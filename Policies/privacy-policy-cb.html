@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - ChemBalance</title>
+    <title>Privacy Policy - ChemScale</title>
     <style>
         :root {
             --bg: #0f1424;
             --surface: #1a2133;
+            --surface-alt: #232c42;
             --border: #2e3852;
             --text: #ebf0f6;
             --text-secondary: #8c96ab;
@@ -23,7 +24,7 @@
             -webkit-font-smoothing: antialiased;
         }
         .container {
-            max-width: 760px;
+            max-width: 780px;
             margin: 0 auto;
             padding: 48px 24px 80px;
         }
@@ -74,13 +75,31 @@
             padding: 20px 22px;
             margin-bottom: 18px;
         }
-        .card strong {
-            color: var(--primary);
+        .card strong { color: var(--primary); }
+        .toc {
+            background: var(--surface-alt);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 18px 22px;
+            margin-bottom: 28px;
         }
+        .toc p { margin-bottom: 8px; font-weight: 600; color: var(--primary); }
+        .toc ol { margin-left: 20px; }
+        .toc li { margin-bottom: 5px; }
+        .toc a { color: var(--text-secondary); text-decoration: none; }
+        .toc a:hover { color: var(--primary); text-decoration: underline; }
         a { color: var(--primary); text-decoration: none; }
         a:hover { text-decoration: underline; }
         .muted { color: var(--text-secondary); }
         .small { font-size: 13px; }
+        .highlight {
+            background: rgba(230, 107, 51, 0.08);
+            border: 1px solid rgba(230, 107, 51, 0.3);
+            border-radius: 14px;
+            padding: 20px 22px;
+            margin-bottom: 18px;
+        }
+        .highlight strong { color: var(--accent); }
         footer {
             margin-top: 48px;
             padding-top: 24px;
@@ -105,22 +124,55 @@
     <div class="container">
         <header>
             <span class="badge">PRIVACY POLICY</span>
-            <h1>ChemBalance Privacy Policy</h1>
+            <h1>ChemScale Privacy Policy</h1>
+            <p class="subtitle">App Name: ChemScale &nbsp;·&nbsp; Bundle ID: com.chembalance.app</p>
             <p class="subtitle">Effective Date: August 18, 2026</p>
         </header>
 
         <p>
-            Thank you for using <strong>ChemBalance</strong> ("the App"). Your privacy matters to us.
-            This Privacy Policy explains how ChemBalance handles information when you use the App.
-            By using the App, you agree to the practices described in this policy.
+            Thank you for choosing <strong>ChemScale</strong> ("the App"), a chemical equation
+            balancing trainer. Your privacy is important to us. This Privacy Policy explains how the
+            App handles information. By using the App, you agree to the practices described below.
         </p>
 
-        <h2>1. Information We Collect</h2>
-        <p>ChemBalance <strong>does not collect, store, or transmit any personal information</strong>. The App is fully offline and does not require you to create an account, sign in, or provide any personal details such as your name, email address, phone number, or location.</p>
+        <div class="highlight">
+            <p><strong>In short:</strong> ChemScale is a fully offline educational app. It
+            <strong>collects, stores, and transmits no personal data</strong>. There is no account
+            system, no tracking, no advertising, and no analytics.</p>
+        </div>
 
-        <h2>2. Local Data Only</h2>
+        <div class="toc">
+            <p>Table of Contents</p>
+            <ol>
+                <li><a href="#collect">Information We Collect</a></li>
+                <li><a href="#local">Local Data Only</a></li>
+                <li><a href="#third">No Third-Party Services</a></li>
+                <li><a href="#network">Network &amp; Permissions</a></li>
+                <li><a href="#children">Children's Privacy</a></li>
+                <li><a href="#security">Data Security</a></li>
+                <li><a href="#rights">Your Rights</a></li>
+                <li><a href="#changes">Changes to This Policy</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ol>
+        </div>
+
+        <h2 id="collect">1. Information We Collect</h2>
+        <p>
+            ChemScale <strong>does not collect, store, or transmit any personal information</strong>.
+            The App is fully offline and does not require you to create an account, sign in, or
+            provide any personal details such as your name, email address, phone number, physical
+            address, or location.
+        </p>
+        <p>
+            No data is gathered from your device, no usage is recorded on any server, and no
+            information is shared with or sold to any third party — because there is no data to
+            share.
+        </p>
+
+        <h2 id="local">2. Local Data Only</h2>
         <div class="card">
-            <p>All data used by the App is stored <strong>locally on your device</strong> and never leaves it. This includes:</p>
+            <p>All data used by the App is stored <strong>locally on your device</strong> and never
+            leaves it. This includes:</p>
             <ul>
                 <li>Your practice statistics (questions answered and correct counts per difficulty level)</li>
                 <li>Your wrong-answer book and review history</li>
@@ -128,60 +180,69 @@
                 <li>Your unlocked achievements and best timed-mode records</li>
                 <li>App preferences</li>
             </ul>
-            <p class="small muted">This information is stored using your device's standard local storage (e.g., <code>UserDefaults</code>) and can be completely removed by deleting the App or clearing the App's data.</p>
+            <p class="small muted">
+                This information is stored using your device's standard local storage (e.g.,
+                <code>UserDefaults</code>) and is completely removed when you delete the App or
+                clear the App's data.
+            </p>
         </div>
 
-        <h2>3. No Third-Party Services</h2>
+        <h2 id="third">3. No Third-Party Services</h2>
         <p>
-            ChemBalance does not integrate any third-party analytics, advertising, crash-reporting,
+            ChemScale does not integrate any third-party analytics, advertising, crash-reporting,
             or tracking SDKs. We do not use cookies, web beacons, or similar tracking technologies.
-            Since no data is sent to any server, there is nothing to share with third parties.
+            The App does not connect to any server, so no data can be collected or processed by
+            external parties.
         </p>
 
-        <h2>4. Network &amp; Permissions</h2>
+        <h2 id="network">4. Network &amp; Permissions</h2>
         <p>
-            The App does not make any network requests and does not request any sensitive device
-            permissions (such as camera, microphone, contacts, or precise location).
+            The App makes <strong>no network requests</strong> and requests <strong>no sensitive
+            device permissions</strong> (such as camera, microphone, contacts, or precise location).
         </p>
 
-        <h2>5. Children's Privacy</h2>
+        <h2 id="children">5. Children's Privacy</h2>
         <p>
-            ChemBalance is an educational tool suitable for users of all ages, including children.
+            ChemScale is an educational tool suitable for users of all ages, including children.
             Because the App collects no personal information and performs no online communication,
-            it is compliant with the Children's Online Privacy Protection Act (COPPA) and similar
-            regulations. No parental consent is required to use the App.
+            it is designed to comply with the Children's Online Privacy Protection Act (COPPA) and
+            similar regulations. No parental consent is required to use the App.
         </p>
 
-        <h2>6. Data Security</h2>
+        <h2 id="security">6. Data Security</h2>
         <p>
             Because all information remains on your device, it is protected by the security features
-            of your operating system. We recommend keeping your device's operating system up to date.
+            of your operating system. We recommend keeping your device's operating system up to date
+            and installing the latest version of the App.
         </p>
 
-        <h2>7. Your Rights</h2>
+        <h2 id="rights">7. Your Rights</h2>
         <p>You have full control over your data at all times:</p>
         <ul>
-            <li><strong>Delete data:</strong> You may delete your in-App progress at any time from the App's Stats / Settings screen, or by uninstalling the App.</li>
-            <li><strong>Access data:</strong> Since no data is stored by us, there is no data for us to access or provide.</li>
+            <li><strong>Delete data:</strong> Delete your in-App progress at any time from the App's
+            Stats screen, or remove all data by uninstalling the App.</li>
+            <li><strong>Access data:</strong> Since no data is stored by us, there is no data for us
+            to access or provide.</li>
         </ul>
 
-        <h2>8. Changes to This Policy</h2>
+        <h2 id="changes">8. Changes to This Policy</h2>
         <p>
             We may update this Privacy Policy from time to time. Any changes will be reflected by
             updating the "Effective Date" at the top of this page. We encourage you to review this
             policy periodically.
         </p>
 
-        <h2>9. Contact Us</h2>
+        <h2 id="contact">9. Contact Us</h2>
         <p>
-            If you have any questions or concerns about this Privacy Policy, please contact us at:
+            If you have any questions or concerns about this Privacy Policy or the App, please
+            contact us at:
         </p>
         <div class="card">
-            <p><strong>Email:</strong> <a href="mailto:chembalance.app@gmail.com">chembalance.app@gmail.com</a></p>
+            <p><strong>Email:</strong> <a href="mailto:pranavmitra18@icloud.com">pranavmitra18@icloud.com</a></p>
         </div>
 
         <footer>
-            <p>© 2026 ChemBalance. All rights reserved.</p>
+            <p>© 2026 ChemScale. All rights reserved.</p>
             <p class="small">This App does not collect, use, or share any personal data.</p>
         </footer>
     </div>
